@@ -66,10 +66,6 @@ SeatManager* seatManagerCreate(int n) {
         Manager->heap[i] = i+1;
     }
 
-    for(int i = (n/2)- 1; i>=0; i--){       //minheap
-        minHeapify(Manager->heap, n, i);
-    }
-
     return Manager;
 }
 
